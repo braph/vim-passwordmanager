@@ -1,2 +1,2 @@
 #!/bin/sh
-vim -S /usr/share/vimpass/vimpass.vim "$@"
+exec vim -S /usr/share/vimpass/vimpass.vim "$@"

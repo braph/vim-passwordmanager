@@ -1,4 +1,4 @@
-" vim-passwordmanager - use vim as a passwordmanager
+" vim-passwordmanager - simple vim based password manager
 " Copyright (C) 2016 Benjamin Abendroth
 " 
 " This program is free software: you can redistribute it and/or modify
