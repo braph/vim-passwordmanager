@@ -49,9 +49,26 @@ endfunction
 
 set foldtext=MyFoldText()
 
-
 " Syntax Stuff
 syn on
+
+" Statusline
+set laststatus=2
+set statusline=Commands:\ [No]AutoFold
+
+" Make editing easier
+function! AutoFold()
+   set foldclose=all
+   call feedkeys("zM")
+endfunction
+
+function! NoAutoFold()
+   set foldclose=
+   call feedkeys("zR")
+endfunction
+
+command AutoFold call AutoFold()
+command NoAutoFold call NoAutoFold()
 
 " First line contains master password, censor it
 "syn region FirstLine start=/\%1l/ end=/\%2l/
